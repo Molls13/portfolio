@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import styles from './About.module.css'
 import pic from './IMG_0005.JPG'
+import { IoIosArrowDown } from 'react-icons/io'
 
 const About = () => {
     return (
@@ -18,6 +19,9 @@ const About = () => {
                     challenges!
                 </p>
                 <img src={pic} className={styles.img}/>
+                <Link to="techskill" spy={true} smooth={true}>
+                    <IoIosArrowDown className={styles.arrow} />
+                </Link>
             </main>
         </section>
     )
