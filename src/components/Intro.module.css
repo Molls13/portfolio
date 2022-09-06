@@ -1,0 +1,39 @@
+.container {
+    height: 100vh;
+    width:100vw
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    font-size: 4em;
+    font-weight: bolder;
+    color: rgb(78, 78, 78);
+}
+
+.dev {
+    font-size: 2.5em;
+    color: rgb(93, 91, 91);
+}
+
+.more {
+    font-size: 2.5em;
+}
+
+.js {
+    font-weight: bold;
+    color:#e3923a
+}
+
+.arrow {
+    font-size: 4em;
+}
+
+.arrow:hover {
+    color: #e3923a;
+    cursor: pointer;
+}

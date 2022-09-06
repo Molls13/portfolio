@@ -1,0 +1,18 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap:1.3em;
+    font-size: 1.4em;
+    margin-right: 2em;
+    margin-top: 2em;
+}
+
+.about:hover {
+    cursor: pointer;
+    text-decoration: underline #e3923a double;
+}
+
+.works:hover {
+    cursor: pointer;
+    text-decoration: underline #e3923a double;
+}
