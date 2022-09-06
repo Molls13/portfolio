@@ -18,7 +18,7 @@ const About = () => {
                     individually, and I am always ready for new
                     challenges!
                 </p>
-                <img src={pic} className={styles.img} alt="picture of Molly"/>
+                <img src={pic} className={styles.img} alt="Molly"/>
                 <Link to="techskill" spy={true} smooth={true}>
                     <IoIosArrowDown className={styles.arrow} />
                 </Link>
