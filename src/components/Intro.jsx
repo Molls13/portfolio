@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 
 const Intro = () => {
     return (
+        <section className="intro">
         <main className={styles.container}>
             <Navbar />
             <header className={styles.header}>
@@ -17,6 +18,7 @@ const Intro = () => {
                 </Link>
             </header>
         </main>
+        </section>
     )
 }
 

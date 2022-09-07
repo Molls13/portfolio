@@ -1,0 +1,43 @@
+.title {
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgb(78, 78, 78);
+    text-align: center;
+    padding-top: 1em;
+}
+
+.img {
+    height: 20vh
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items:left;
+    margin-left: 18em;
+}
+
+.projectTitle {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-top: 2em;
+}
+
+.buttonWrapper {
+    display: flex;
+    gap: 3.5em;
+}
+
+.button {
+    font-size: 1.2em;
+    border: 1px solid transparent;
+    text-decoration:underline #e3923a;
+    padding-block: .5em;
+    padding-inline:.8em
+}
+
+button:hover {
+    border: 1px solid #e3923a;
+    text-decoration: none;
+    border-radius: 20px;
+}
