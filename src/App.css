@@ -2,7 +2,12 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  background-color: #f0efeb
+  /* background-color: #f0efeb */
+  background-image: url('../public/backgroundImg/sunflower5.jpg');
+  background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e6e7eb;
 }
 
 .arrowUp {

@@ -14,8 +14,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items:left;
-    margin-left: 18em;
-}
+    place-items: center;
+} 
 
 .projectTitle {
     font-size: 1.4em;
