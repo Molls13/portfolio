@@ -14,7 +14,7 @@ const Intro = () => {
                 <header className={styles.header}>
                     <p className={styles.name}>Yumeng Molly <span className={styles.sun}>Sun</span><img src={sun} alt='sun' className={styles.sunImg}/></p>
                     <p className={styles.dev}>Full-stack <span className={styles.js}>Javascript</span> developer based in Oslo</p>
-                    <p className={styles.more}>Know more about me</p>
+                    <p className={styles.more}>know more about me</p>
                     <Link to="about" spy={true} smooth={true}>
                         <IoIosArrowDown className={styles.arrow} />
                     </Link>

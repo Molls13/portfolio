@@ -8,7 +8,7 @@ import sun from './sun.png'
 const About = () => {
     return (
         <section className="about">
-            <main className={`${styles.container} ${styles.active} ${styles.fadebottom}`}>
+            <main className={`${styles.container} ${styles.reveal} ${styles.active} ${styles.fadebottom}`}>
                 <p className={styles.aboutMe}>About me<img src={sun} alt='sun' className={styles.sunImg}/></p>
                 <div className={styles.borderContainer}>
                     <p className={styles.text}>

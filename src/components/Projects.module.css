@@ -13,9 +13,9 @@
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items:left;
+    justify-items: left;
     place-items: center;
-} 
+}
 
 .projectTitle {
     font-size: 1.4em;
@@ -26,18 +26,20 @@
 .buttonWrapper {
     display: flex;
     gap: 3.5em;
+    padding-top: 1em;
 }
 
 .button {
     font-size: 1.2em;
     border: 1px solid transparent;
-    text-decoration:underline #e3923a;
+    /* color: #e3923a;
+    text-decoration:underline #e3923a; */
     padding-block: .5em;
-    padding-inline:.8em
+    padding-inline: .8em;
+    border-radius: 20px;
 }
 
 button:hover {
-    border: 1px solid #e3923a;
+    color: #e3923a;
     text-decoration: none;
-    border-radius: 20px;
 }
