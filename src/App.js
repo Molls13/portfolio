@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Techskill from './components/Techskill';
 import { IoIosArrowUp } from 'react-icons/io'
 import { Link } from "react-scroll";
+import TimeLine from './components/TimeLine';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     </Link>
       <Intro />
       <About />
+      <TimeLine />
       <Techskill />
       <Projects />
       <Contact />

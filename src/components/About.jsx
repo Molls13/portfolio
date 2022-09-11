@@ -23,7 +23,7 @@ const About = () => {
                     <img src={pic} className={styles.img} alt="Molly" />
                 </div>
                 <div className={styles.arrowWrapper}>
-                <Link to="techskill" spy={true} smooth={true}>
+                <Link to="timeline" spy={true} smooth={true}>
                     <IoIosArrowDown className={styles.arrow} />
                 </Link>
                 </div>
