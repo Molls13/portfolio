@@ -20,8 +20,9 @@ const TimeLine = () => {
                     icon={<MdOutlineMenuBook />}
 
                 >
-                    <h3 className={styles.bachelor}>Bachelor in Economics</h3>
-                    <h4 className={styles.ucsb}>University of California, Santa Barbara</h4>
+                    <h3>Bachelor in Economics</h3>
+                    <h4>University of California, Santa Barbara</h4>
+                    <p>Bachelor’s degree in Economics. Participated in the exchange program to University of Oslo from August 2017 to December 2018.</p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className={styles.work}
@@ -32,8 +33,9 @@ const TimeLine = () => {
                     icon={<MdOutlineWork />}
 
                 >
-                    <h3 className={styles.ISF}>International Orientation Leader</h3>
-                    <h4 className={styles.ucsb}>Santa Barbara, California, USA</h4>
+                    <h3>International Orientation Leader</h3>
+                    <h4>Santa Barbara, California, USA</h4>
+                    <p>Coordinating and planning orientations for international students.</p>
 
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -45,8 +47,9 @@ const TimeLine = () => {
                     icon={<MdOutlineWork />}
 
                 >
-                    <h3 className={styles.ISF}>Academic Peer Advisor</h3>
-                    <h4 className={styles.ucsb}>Santa Barbara, California, USA</h4>
+                    <h3>Academic Peer Advisor</h3>
+                    <h4>Santa Barbara, California, USA</h4>
+                    <p>Academic peer counselor that gives adivices on class registration and helps students get out of academic probation</p>
 
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -58,8 +61,9 @@ const TimeLine = () => {
                     icon={<MdOutlineMenuBook />}
 
                 >
-                    <h3 className={styles.bachelor}>Master in Economics</h3>
-                    <h4 className={styles.ucsb}>University of Oslo</h4>
+                    <h3>Master in Economics</h3>
+                    <h4>University of Oslo</h4>
+                    <p>Economics master’s degree with a focus on statistics and data science.</p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className={styles.work}
@@ -70,16 +74,30 @@ const TimeLine = () => {
                     icon={<MdOutlineWork />}
 
                 >
-                    <h3 className={styles.ISF}>Institute for Social Research</h3>
-                    <h4 className={styles.ucsb}>Oslo, Norway</h4>
+                    <h3>Institute for Social Research</h3>
+                    <h4>Oslo, Norway</h4>
+                    <p>Received a scholarship to participate in the Arbeid og Velferd (ARV) project in connection to the master’s thesis.</p>
 
                 </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className={styles.work}
+                    contentStyle={{ background: '#e6e7eb', color: 'black' }}
+                    contentArrowStyle={{ borderRight: '7px solid black' }}
+                    date="2020 - 2021"
+                    iconStyle={{ background: '#e6e7eb', color: 'black' }}
+                    icon={<MdOutlineWork />}
 
+                >
+                    <h3>School of Applied Technology</h3>
+                    <h4>Stockholm, Sweden</h4>
+                    <p>Intensive three-month full-stack web development with a focus on TDD, mob programming, and applied learning</p>
+
+                </VerticalTimelineElement>
             </VerticalTimeline>
             <div className={styles.arrowWrapper}>
-            <Link to="techskill" spy={true} smooth={true}>
-                <IoIosArrowDown className={styles.arrow} />
-            </Link>
+                <Link to="techskill" spy={true} smooth={true}>
+                    <IoIosArrowDown className={styles.arrow} />
+                </Link>
             </div>
         </section>
     )
