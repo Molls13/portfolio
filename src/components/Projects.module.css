@@ -7,14 +7,16 @@
 }
 
 .img {
-    height: 20vh
+    height: 30vh
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: left;
-    place-items: center;
+    /* place-items: center; */
+    margin-inline: 15em;
+    gap: 30px
 }
 
 .projectTitle {
