@@ -10,13 +10,16 @@
     height: 30vh
 }
 
+.containerWrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: left;
-    /* place-items: center; */
-    margin-inline: 15em;
-    gap: 30px
+    gap: 10em;
 }
 
 .projectTitle {
@@ -34,14 +37,40 @@
 .button {
     font-size: 1.2em;
     border: 1px solid transparent;
-    /* color: #e3923a;
-    text-decoration:underline #e3923a; */
     padding-block: .5em;
     padding-inline: .8em;
     border-radius: 20px;
+    box-shadow: 1px 1px 20px -3px #b5b6b9;
 }
 
 button:hover {
     color: #e3923a;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .title {
+        padding-top: 0;
+        margin-top:0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em
+    }
+
+    .img {
+        height: 20vh
+    }
+
+    .techStack {
+        display: none;
+    }
+
+    .projectTitle{
+        padding: 0;
+    }
+
 }

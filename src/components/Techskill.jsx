@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from './Techskill.module.css'
 import { IoLogoNodejs } from 'react-icons/io'
 import {
     SiTypescript, SiJavascript, SiReact, SiRedux, SiFirebase,
-    SiHtml5, SiCss3, SiExpress, SiMongodb, SiSequelize, SiPostgresql,
+    SiHtml5, SiCss3, SiExpress, SiMongodb, SiSqlite, SiPostgresql,
     SiGithub, SiNetlify, SiHeroku, SiFigma
 } from 'react-icons/si'
 import { IoIosArrowDown } from 'react-icons/io'
 import { Link } from "react-scroll";
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const Techskill = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
     return (
-        <section className="techskill">
+        <section className="techskill" data-aos="fade" data-aos-offset="400" data-aos-easing="ease-in" data-aos-duration="600">
             <div className={styles.bigContainer}>
                 <div className={styles.techskill}>Tech Skills</div>
                 <div className={styles.smallContainer}>
@@ -32,8 +38,9 @@ const Techskill = () => {
                         <p className={styles.title}>Backend</p>
                         <p><IoLogoNodejs className={styles.iconSpecial} /> NodeJs</p>
                         <p><SiExpress className={styles.icon} /> ExpressJs</p>
-                        <p><SiMongodb className={styles.icon} /> MongoDB/Mongoose</p>
-                        <p><SiSequelize className={styles.icon} /> Sequelize/ <SiPostgresql className={styles.icon} /> Postgres</p>
+                        <p><SiMongodb className={styles.icon} /> MongoDB</p>
+                        <p><SiSqlite className={styles.icon} /> SQLite </p>
+                        <p><SiPostgresql className={styles.icon} /> Postgres</p>
                     </section>
                     <section>
                         <p className={styles.title}>Tools</p>

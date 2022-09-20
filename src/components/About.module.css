@@ -1,7 +1,6 @@
 .aboutMe {
     font-size: 2em;
     font-weight: bold;
-    padding-top: .7em;
     color: rgb(78, 78, 78);
     text-align: center;
 }
@@ -11,10 +10,12 @@
   }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     position: relative;
-    opacity: 0;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .borderContainer {
@@ -22,32 +23,26 @@
     flex-direction: column;
     align-items: center;
     width: 70%;
-    height: 75%;
+    height: 70%;
     border: 1px solid white;
-    margin-left: 13em;
     background-color: white;
     border-radius: 30px;
-}
-
-.reveal.active {
-    opacity: 1;
-}
-
-.active.fadebottom {
-    animation: fade-bottom 1s ease-in;
+    gap: 2em;
 }
 
 .img {
-    max-height: 45%;
+    max-height: 40%;
     padding-block: 1em;
+    max-width: 80%;
 }
 
 .text {
     font-size: 1.3em;
-    width: 60%;
+    width: 70%;
     color: rgb(93, 91, 91);
-    padding-top: 1em;
+    margin-top: 1em;
     text-align: center;
+    max-height:30%;
 }
 
 .arrow {
@@ -80,15 +75,17 @@
     }
 }
 
-@keyframes fade-bottom {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
+@media only screen and (max-width: 800px) {
+    .text{
+        width: 90%;
+        font-size: 1.1em;
+        padding-bottom: 1em;
+    }
+    .borderContainer{
+        gap: 4em
     }
 
-    100% {
-        transform: translateY(0);
-        opacity: 1;
+    .aboutMe {
+        padding-top: 0;
     }
 }
-

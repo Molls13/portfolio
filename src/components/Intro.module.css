@@ -1,6 +1,6 @@
 .container {
   height: 100vh;
-  width: 100vw
+  min-width: 100vw
 }
 
 .header {
@@ -76,5 +76,21 @@
 
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    padding-left: 1em;
+  }
+  .name {
+    padding: 0;
+  }
+  .dev {
+    margin-left: auto;
+  }
+
+  .more {
+    display:none
   }
 }

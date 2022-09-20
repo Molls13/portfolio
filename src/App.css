@@ -5,13 +5,13 @@ body {
   /* background-color: #f0efeb */
   background-image: url('../public/backgroundImg/sunflower5.jpg');
   background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #e6e7eb;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e6e7eb;
 }
 
 .arrowUp {
-  position:sticky;
+  position: sticky;
   font-size: 2em;
   top: 80vh;
   left: 95vw;
@@ -22,3 +22,17 @@ body {
   color: #e3923a;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 800px) {
+  body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #e6e7eb;
+    background-image: none;
+  }
+
+  .arrowUp {
+    top: 90vh;
+    left: 90vw
+  }
+}
+

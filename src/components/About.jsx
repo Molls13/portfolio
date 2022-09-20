@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import styles from './About.module.css'
 import pic from './IMG_0005.JPG'
 import { IoIosArrowDown } from 'react-icons/io'
 import sun from './sun.png'
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const About = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+    
     return (
-        <section className="about">
-            <main className={`${styles.container} ${styles.reveal} ${styles.active} ${styles.fadebottom}`}>
+        <section className="about" data-aos="fade" data-aos-offset="400" data-aos-easing="ease-in" data-aos-duration="600">
+            <main className={styles.container}>
                 <p className={styles.aboutMe}>About me<img src={sun} alt='sun' className={styles.sunImg}/></p>
                 <div className={styles.borderContainer}>
                     <p className={styles.text}>

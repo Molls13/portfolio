@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from './Projects.module.css'
 import portfolio from './projectImages/portfolio.gif'
 import pong from './projectImages/pong.gif'
@@ -6,16 +6,24 @@ import fourInaRow from './projectImages/4inarow.gif'
 import todo from './projectImages/todo.gif'
 import foodOrdering from './projectImages/foodOrdering.gif'
 import travelogger from './projectImages/travelogger.gif'
-
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const Projects = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
     return (
-        <section className="projects">
+        <section className="projects" data-aos="fade" data-aos-offset="400" data-aos-easing="ease-in" data-aos-duration="600">
             <p className={styles.title}>Projects</p>
+            <div className={styles.containerWrapper}>
+
             <div className={styles.container}>
                 <div className={styles.projectCardTravel}>
                     <p className={styles.projectTitle}>Travelogger</p>
                     <img src={travelogger} alt="travelogger" className={styles.img} />
+                    <p className={styles.techStack}> React, Express, Firebase, Cloudinary, MongoDB, SwiperJS</p>
                     <div className={styles.buttonWrapper}>
                         <button className={styles.button} onClick={(e) => {
                             e.preventDefault();
@@ -64,6 +72,7 @@ const Projects = () => {
                         <button className={styles.button}>Live demo</button>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     )
