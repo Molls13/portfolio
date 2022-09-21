@@ -85,4 +85,8 @@ button:hover {
         align-items: center;
     }
 
+    .button{
+        color: black;
+    }
+
 }
