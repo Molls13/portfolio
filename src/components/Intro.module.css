@@ -29,7 +29,6 @@
 .dev {
   font-size: 2.5em;
   color: rgb(93, 91, 91);
-  padding-right: 1em;
 }
 
 .more {
@@ -80,17 +79,16 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .container {
-    padding-left: 1em;
-  }
   .name {
     padding: 0;
-  }
-  .dev {
-    margin-left: auto;
   }
 
   .more {
     display:none
   }
+
+  .header{
+    padding-inline: 1em;
+  }
+
 }
