@@ -11,15 +11,20 @@ import TimeLine from './components/TimeLine';
 function App() {
   return (
     <>
-    <Link to="intro" spy={true} smooth={true}>
-      <IoIosArrowUp className='arrowUp'/>
-    </Link>
+      <Link to="intro" spy={true} smooth={true}>
+        <IoIosArrowUp className='arrowUp' />
+      </Link>
       <Intro />
       <About />
       <TimeLine />
       <Techskill />
       <Projects />
       <Contact />
+      <div className='arrowWrapper'>
+        <Link to="intro" spy={true} smooth={true}>
+          <IoIosArrowUp className='arrowUpMobile' />
+        </Link>
+      </div>
     </>
   );
 }

@@ -10,6 +10,10 @@ body {
   background-color: #e6e7eb;
 }
 
+.arrowUpMobile {
+  display: none
+}
+
 .arrowUp {
   position: sticky;
   font-size: 2em;
@@ -31,8 +35,40 @@ body {
   }
 
   .arrowUp {
-    top: 90vh;
-    left: 90vw
+    display: none
+  }
+
+  .arrowUpMobile {
+    display: flex;
+    font-size: 3em;
+    /* padding-inline: 44vw; */
+    text-align: center;
+    margin-bottom: 3em;
+    color: #e3923a;
+    animation: pulse 1s infinite;
+  }
+
+  .arrowUpMobile:hover {
+    color: #f6d6b4;
+    cursor: pointer;
+    animation: none;
+  }
+  .arrowWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.85);
+    }
+  
+    70% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(0.85);
+    }
   }
 }
-
