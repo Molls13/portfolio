@@ -15,7 +15,7 @@ const Projects = () => {
         AOS.refresh();
       }, []);
     return (
-        <section className="projects" data-aos="fade" data-aos-offset="400" data-aos-easing="ease-in" data-aos-duration="600">
+        <section className="projects" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="600">
             <p className={styles.title}>Projects</p>
             <div className={styles.containerWrapper}>
 

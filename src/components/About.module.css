@@ -22,17 +22,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    width: 60%;
     height: 70%;
     border: 1px solid white;
     background-color: white;
     border-radius: 30px;
-    gap: 2em;
 }
 
 .img {
     max-height: 40%;
-    padding-block: 1em;
+    padding-top: 1em;
     max-width: 80%;
 }
 
@@ -42,7 +41,7 @@
     color: rgb(93, 91, 91);
     margin-top: 1em;
     text-align: center;
-    max-height:30%;
+    max-height:40%;
 }
 
 .arrow {
@@ -79,13 +78,23 @@
     .text{
         width: 90%;
         font-size: 1.1em;
-        padding-bottom: 1em;
+        padding-block: 1em;
     }
     .borderContainer{
-        gap: 4em
+        width: 85vw;
     }
 
     .aboutMe {
         padding-top: 0;
+        padding-left: 1em;
+    }
+    .img {
+        padding-bottom: .5em;
+    }
+}
+
+@media only screen and (max-width: 986px){
+    .text{
+        font-size: 1.07em;
     }
 }

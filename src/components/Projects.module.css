@@ -73,4 +73,16 @@ button:hover {
         padding: 0;
     }
 
+    .projectCardTravel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
