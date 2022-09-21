@@ -78,6 +78,13 @@
   }
 }
 
+@media only screen and (max-width: 345px) {
+  .name {
+    font-size: 3.5em;
+    padding:0
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .name {
     padding: 0;
