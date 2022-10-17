@@ -4,7 +4,6 @@ import portfolio from './projectImages/portfolio.gif'
 import pong from './projectImages/pong.gif'
 import fourInaRow from './projectImages/4inarow.gif'
 import todo from './projectImages/todo.gif'
-import foodOrdering from './projectImages/foodOrdering.gif'
 import travelogger from './projectImages/travelogger.gif'
 import AOS from 'aos'
 import "aos/dist/aos.css";
