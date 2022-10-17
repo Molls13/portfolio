@@ -89,7 +89,7 @@ const Projects = () => {
                         <button className={styles.button} disabled='true'>Live demo</button>
                     </div>
                 </div>
-                <div className={styles.projectCard}>
+                {/* <div className={styles.projectCard}>
                     <p className={styles.projectTitle}>Food Ordering App</p>
                     <img src={foodOrdering} alt="food Ordering app" className={styles.img} />
                     <p className={styles.techStack}> ReactJS, LocalStorage</p>
@@ -100,7 +100,7 @@ const Projects = () => {
                         }}>View on github</button>
                         <button className={styles.button} disabled='true'>Live demo</button>
                     </div>
-                </div>
+                </div> */}
             </div>
             </div>
         </section>
