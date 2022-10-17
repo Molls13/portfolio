@@ -26,7 +26,7 @@ const Projects = () => {
                     <div className={styles.buttonWrapper}>
                         <button className={styles.button} onClick={(e) => {
                             e.preventDefault();
-                            window.open('https://github.com/maheralsamman/travelogger','_blank');
+                            window.open('https://github.com/Molls13/travelogger','_blank');
                         }}>View on github</button>
                         <button className={styles.button} onClick={(e)=> {
                             e.preventDefault()
