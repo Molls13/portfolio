@@ -83,7 +83,7 @@ const TimeLine = () => {
                     className={styles.work}
                     contentStyle={{ background: '#e6e7eb', color: 'black' }}
                     contentArrowStyle={{ borderRight: '7px solid black' }}
-                    date="2020 - 2021"
+                    date="2022"
                     iconStyle={{ background: '#e6e7eb', color: 'black' }}
                     icon={<MdOutlineWork />}
 
@@ -91,6 +91,34 @@ const TimeLine = () => {
                     <h3 className={styles.jobTitle}>School of Applied Technology</h3>
                     <h4>Stockholm, Sweden</h4>
                     <p>Intensive three-month full-stack web development with a focus on TDD, mob programming, and applied learning</p>
+
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className={styles.work}
+                    contentStyle={{ background: '#e6e7eb', color: 'black' }}
+                    contentArrowStyle={{ borderRight: '7px solid black' }}
+                    date="2022"
+                    iconStyle={{ background: '#e6e7eb', color: 'black' }}
+                    icon={<MdOutlineWork />}
+
+                >
+                    <h3 className={styles.jobTitle}>School of Applied Technology</h3>
+                    <h4>Stockholm, Sweden</h4>
+                    <p>Full-stack developer</p>
+
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className={styles.work}
+                    contentStyle={{ background: '#e6e7eb', color: 'black' }}
+                    contentArrowStyle={{ borderRight: '7px solid black' }}
+                    date="2022"
+                    iconStyle={{ background: '#e6e7eb', color: 'black' }}
+                    icon={<MdOutlineWork />}
+
+                >
+                    <h3 className={styles.jobTitle}>Prosmar Bunkering</h3>
+                    <h4>Oslo, Norway</h4>
+                    <p>Business analyst with a focus on product analyzation</p>
 
                 </VerticalTimelineElement>
             </VerticalTimeline>
